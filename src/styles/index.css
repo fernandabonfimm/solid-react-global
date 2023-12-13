@@ -1,0 +1,121 @@
+/* src/main.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+:root {
+  font-family: 'DMSans', sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #546E7A;
+  background-color: #FFFFFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #00A19D;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #18262E;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  display: flex;
+  padding: 17px 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #00A19D;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color:  #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+button:hover {
+  border-color: #00A19D;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-ExtraBold.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-Light.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('./../assets/fonts/DMSans-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #18262E;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #18262E;
+  }
+  button {
+    background-color: #F1F5F5;
+  }
+}
